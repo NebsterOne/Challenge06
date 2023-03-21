@@ -48,7 +48,7 @@ $(document).ready(function () {
       url:
         "https://api.openweathermap.org/data/2.5/weather?q=" +
         searchTerm +
-        "&appid=5d389be66a47c0fae37025df4aeaa808",
+        "&units=metric&appid=5d389be66a47c0fae37025df4aeaa808",
     }).then(function (data) {
       //if index of search value does not exist
       if (history.indexOf(searchTerm) === -1) {
@@ -88,7 +88,7 @@ $(document).ready(function () {
       $.ajax({
         type: "GET",
         url:
-          "https://api.openweathermap.org/data/2.5/uvi?appid=5d389be66a47c0fae37025df4aeaa808&lat=" +
+          "https://api.openweathermap.org/data/2.5/uvi?&units=metric&appid=5d389be66a47c0fae37025df4aeaa808&lat=" +
           lat +
           "&lon=" +
           lon,
@@ -127,7 +127,7 @@ $(document).ready(function () {
       url:
         "https://api.openweathermap.org/data/2.5/forecast?q=" +
         searchTerm +
-        "&appid=5d389be66a47c0fae37025df4aeaa808&units=metric",
+        "&units=metric&appid=5d389be66a47c0fae37025df4aeaa808&units=metric",
     }).then(function (data) {
       console.log(data);
       $("#forecast")
