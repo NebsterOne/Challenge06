@@ -73,7 +73,7 @@ $(document).ready(function () {
       var cardBody = $("<div>").addClass("card-body");
       var wind = $("<p>")
         .addClass("card-text")
-        .text("Wind Speed: " + data.wind.speed + " MPH");
+        .text("Wind Speed: " + data.wind.speed + " KPH");
       var humid = $("<p>")
         .addClass("card-text")
         .text("Humidity: " + data.main.humidity + " %");
@@ -81,6 +81,7 @@ $(document).ready(function () {
         .addClass("card-text")
         .text("Temperature: " + data.main.temp + " K");
       console.log(data);
+      
       var lon = data.coord.lon;
       var lat = data.coord.lat;
 
@@ -153,7 +154,7 @@ $(document).ready(function () {
             .text("Humidity: " + data.list[i].main.humidity + "%");
           var tempFive = $("<p>")
             .addClass("card-text")
-            .text("Temperature: " + data.list[i].main.temp + " °F");
+            .text("Temperature: " + data.list[i].main.temp + " °C");
 
           //merge together and put on page
           colFive.append(
