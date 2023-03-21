@@ -48,7 +48,7 @@ $(document).ready(function () {
       url:
         "https://api.openweathermap.org/data/2.5/weather?q=" +
         searchTerm +
-        "&appid=9f112416334ce37769e5c8683b218a0d",
+        "&appid=5d389be66a47c0fae37025df4aeaa808",
     }).then(function (data) {
       //if index of search value does not exist
       if (history.indexOf(searchTerm) === -1) {
@@ -79,16 +79,16 @@ $(document).ready(function () {
         .text("Humidity: " + data.main.humidity + " %");
       var temp = $("<p>")
         .addClass("card-text")
-        .text("Temperature: " + data.main.temp + " K");
+        .text("Temperature: " + data.main.temp + " C");
       console.log(data);
-      
+
       var lon = data.coord.lon;
       var lat = data.coord.lat;
 
       $.ajax({
         type: "GET",
         url:
-          "https://api.openweathermap.org/data/2.5/uvi?appid=9f112416334ce37769e5c8683b218a0d&lat=" +
+          "https://api.openweathermap.org/data/2.5/uvi?appid=5d389be66a47c0fae37025df4aeaa808&lat=" +
           lat +
           "&lon=" +
           lon,
