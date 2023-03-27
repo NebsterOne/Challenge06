@@ -1,19 +1,19 @@
 # 06 Server-Side APIs: Weather Dashboard
 
 ## Table of contents
-* [Task](#task)
-* [User Story](#user-story)
-* [Acceptance Criteria](#acceptance-criteria)
-* [Technologies used](#technologies-used)
-* [Live URL](#live-url) 
-* [Screenshots](#screenshots)
-* [Installation](#installation) 
-* [License](#license)
+
+- [Task](#task)
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Technologies used](#technologies-used)
+- [Live URL](#live-url)
+- [Screenshots](#screenshots)
+- [Installation](#installation)
+- [License](#license)
 
 ## Task
 
 Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
-
 
 ## User Story
 
@@ -38,26 +38,27 @@ THEN I am presented with a 5-day forecast that displays the date, an icon repres
 WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 ```
+
 <br>
 
-## Technologies Used 
+## Technologies Used
+
 ```
 The following technologies are used in this solution:
 1. HTML
-2. JavaScript 
-3. Foundation CSS Framework 
-4. jQuery 
+2. JavaScript
+3. Foundation CSS Framework
+4. jQuery
 5. Moment.js
 6. Openweather APIs
-7. Google Place APIs
 ```
-<br>
-
-
-## Live URL 
 
 <br>
 
+## Live URL
+
+https://nebsterone.github.io/Challenge06/
+<br>
 
 ## Screenshots
 
@@ -76,12 +77,12 @@ The following technologies are used in this solution:
 ![Weather Dashboard - Screenshot 5](./assets/images/wd_5.png)
 <br>
 
-## Installation 
+## Installation
 
-No Installation Required. 
+No Installation Required.
 
 <br>
 
-## License 
+## License
 
 Not Applicable
